@@ -14,7 +14,7 @@ function Header() {
       <div className="container">
         <div className="header-inner">
           <Link to="/" className="logo">
-            <img src="http://chosenmetalind.com/data/96/uploads/logo.png" alt="Chosen Metal Industries" />
+            <img src="/images/uploads/logo.png" alt="Chosen Metal Industries" />
           </Link>
 
           <nav className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>

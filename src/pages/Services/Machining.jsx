@@ -1,8 +1,8 @@
 const machiningImages = [
-  'http://chosenmetalind.com/data/96/uploads/1file__05919222836.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__05610170229.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__05527133144.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__06324162135.jpg'
+  '/images/uploads/1file__05919222836.jpg',
+  '/images/uploads/2file__05610170229.jpg',
+  '/images/uploads/2file__05527133144.jpg',
+  '/images/uploads/2file__06324162135.jpg'
 ];
 
 function Machining() {

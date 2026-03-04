@@ -1,12 +1,12 @@
 const sourcingImages = [
-  'http://chosenmetalind.com/data/96/uploads/3file__06324162044.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__06324162044.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__06324162059.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__06324162059.jpg',
-  'http://chosenmetalind.com/data/96/uploads/3file__06324162059.jpg',
-  'http://chosenmetalind.com/data/96/uploads/3file__06324162117.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__06324162117.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__06324162117.jpg'
+  '/images/uploads/3file__06324162044.jpg',
+  '/images/uploads/2file__06324162044.jpg',
+  '/images/uploads/1file__06324162059.jpg',
+  '/images/uploads/2file__06324162059.jpg',
+  '/images/uploads/3file__06324162059.jpg',
+  '/images/uploads/3file__06324162117.jpg',
+  '/images/uploads/2file__06324162117.jpg',
+  '/images/uploads/1file__06324162117.jpg'
 ];
 
 function Sourcing() {

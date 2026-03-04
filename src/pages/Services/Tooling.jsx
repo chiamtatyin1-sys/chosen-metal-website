@@ -1,7 +1,7 @@
 const toolingImages = [
-  'http://chosenmetalind.com/data/96/uploads/3file__06324162135.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__06324162145.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__06324162740.jpg'
+  '/images/uploads/3file__06324162135.jpg',
+  '/images/uploads/2file__06324162145.jpg',
+  '/images/uploads/1file__06324162740.jpg'
 ];
 
 function Tooling() {

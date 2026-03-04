@@ -1,7 +1,7 @@
 const aluminiumImages = [
-  'http://chosenmetalind.com/data/96/uploads/1file__05919221430.gif',
-  'http://chosenmetalind.com/data/96/uploads/1file__05919222044.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05527133157.jpg'
+  '/images/uploads/1file__05919221430.gif',
+  '/images/uploads/1file__05919222044.jpg',
+  '/images/uploads/1file__05527133157.jpg'
 ];
 
 function Aluminium() {

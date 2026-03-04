@@ -1,8 +1,8 @@
 const fabricationImages = [
-  'http://chosenmetalind.com/data/96/uploads/3file__05607113908.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05527133144.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05607113929.jpg',
-  'http://chosenmetalind.com/data/96/uploads/2file__05610170138.jpg'
+  '/images/uploads/3file__05607113908.jpg',
+  '/images/uploads/1file__05527133144.jpg',
+  '/images/uploads/1file__05607113929.jpg',
+  '/images/uploads/2file__05610170138.jpg'
 ];
 
 function Fabrication() {

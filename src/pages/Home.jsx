@@ -2,17 +2,17 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  'http://chosenmetalind.com/data/96/aimg/new-1.jpg',
-  'http://chosenmetalind.com/data/96/aimg/new-2.jpg',
-  'http://chosenmetalind.com/data/96/aimg/new-3.jpg',
-  'http://chosenmetalind.com/data/96/aimg/new-4.jpg',
-  'http://chosenmetalind.com/data/96/aimg/new-5.jpg'
+  '/images/aimg/new-1.jpg',
+  '/images/aimg/new-2.jpg',
+  '/images/aimg/new-3.jpg',
+  '/images/aimg/new-4.jpg',
+  '/images/aimg/new-5.jpg'
 ];
 
 const galleryImages = [
-  'http://chosenmetalind.com/data/96/uploads/1file__05919182208.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05919182208_2.png',
-  'http://chosenmetalind.com/data/96/uploads/1file__05611161150.jpg'
+  '/images/uploads/1file__05919182208.jpg',
+  '/images/uploads/1file__05919182208_2.png',
+  '/images/uploads/1file__05611161150.jpg'
 ];
 
 function Home() {
@@ -76,7 +76,7 @@ function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <img src="http://chosenmetalind.com/data/96/uploads/about-1.png" alt="About CMI" />
+              <img src="/images/uploads/about-1.png" alt="About CMI" />
             </div>
             <div className="about-text">
               <h2>Transforming Ideas Into Realities</h2>
@@ -104,7 +104,7 @@ function Home() {
         <div className="container">
           <h2 className="section-title">Our Services</h2>
           <p className="section-subtitle">
-            Comprehensive metal manufacturing solutions under one roof
+            ComprehensiveName="section-sub metal manufacturing solutions under one roof
           </p>
 
           <div className="services-grid">

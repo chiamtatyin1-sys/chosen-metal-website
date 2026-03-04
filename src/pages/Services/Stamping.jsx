@@ -1,7 +1,7 @@
 const serviceImages = [
-  'http://chosenmetalind.com/data/96/uploads/2file__05919172951.gif',
-  'http://chosenmetalind.com/data/96/uploads/3file__05527133113.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05919222448.gif'
+  '/images/uploads/2file__05919172951.gif',
+  '/images/uploads/3file__05527133113.jpg',
+  '/images/uploads/1file__05919222448.gif'
 ];
 
 function Stamping() {

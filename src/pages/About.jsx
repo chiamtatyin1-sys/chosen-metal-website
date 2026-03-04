@@ -1,7 +1,7 @@
 const aboutImages = [
-  'http://chosenmetalind.com/data/96/uploads/about-3.png',
-  'http://chosenmetalind.com/data/96/uploads/about-1.png',
-  'http://chosenmetalind.com/data/96/uploads/about-2.png'
+  '/images/uploads/about-3.png',
+  '/images/uploads/about-1.png',
+  '/images/uploads/about-2.png'
 ];
 
 function About() {
@@ -62,7 +62,7 @@ function About() {
         <div className="container">
           <div className="content-grid">
             <div className="content-images">
-              <img src="http://chosenmetalind.com/data/96/uploads/1file__05611161150.jpg" alt="OEM Products" />
+              <img src="/images/uploads/1file__05611161150.jpg" alt="OEM Products" />
             </div>
             <div className="content-text">
               <h2>Our OEM Specialization</h2>
@@ -106,7 +106,7 @@ function About() {
               </p>
             </div>
             <div className="content-images single">
-              <img src="http://chosenmetalind.com/data/96/uploads/1file__05919182208.jpg" alt="Strategic Location" />
+              <img src="/images/uploads/1file__05919182208.jpg" alt="Strategic Location" />
             </div>
           </div>
         </div>

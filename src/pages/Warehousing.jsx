@@ -1,7 +1,7 @@
 const warehousingImages = [
-  'http://chosenmetalind.com/data/96/uploads/1file__05915172345.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__06324162135.jpg',
-  'http://chosenmetalind.com/data/96/uploads/nre.jpg'
+  '/images/uploads/1file__05915172345.jpg',
+  '/images/uploads/1file__06324162135.jpg',
+  '/images/uploads/nre.jpg'
 ];
 
 function Warehousing() {

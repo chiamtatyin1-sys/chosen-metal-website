@@ -1,7 +1,7 @@
 const assemblyImages = [
-  'http://chosenmetalind.com/data/96/uploads/2file__05919173619.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05919173619.jpg',
-  'http://chosenmetalind.com/data/96/uploads/1file__05610175505.jpg'
+  '/images/uploads/2file__05919173619.jpg',
+  '/images/uploads/1file__05919173619.jpg',
+  '/images/uploads/1file__05610175505.jpg'
 ];
 
 function Assembly() {
