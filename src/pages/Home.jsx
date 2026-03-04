@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ThreeDShowroom from '../components/ThreeDShowroom';
+
+const heroImages = [
+  'http://chosenmetalind.com/data/96/aimg/new-1.jpg',
+  'http://chosenmetalind.com/data/96/aimg/new-2.jpg',
+  'http://chosenmetalind.com/data/96/aimg/new-3.jpg',
+  'http://chosenmetalind.com/data/96/aimg/new-4.jpg',
+  'http://chosenmetalind.com/data/96/aimg/new-5.jpg'
+];
 
 const galleryImages = [
   'http://chosenmetalind.com/data/96/uploads/1file__05919182208.jpg',
@@ -9,33 +16,59 @@ const galleryImages = [
 ];
 
 function Home() {
-  const [loaded, setLoaded] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    setLoaded(true);
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
   }, []);
+
+  const goToPrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
 
   return (
     <>
-      {/* 3D Hero Section */}
-      <section className="three-d-hero">
-        <div className="three-d-overlay">
-          <div className="hero-content">
-            <h1 className="hero-title">Making Ideas Into Realities</h1>
-            <p className="hero-subtitle">
-              Chosen Metal Industries - Your Trusted Metal Stamping & Fabrication Partner
-            </p>
-            <div className="hero-buttons">
-              <Link to="/contact" className="btn btn-primary">Get In Touch</Link>
-              <Link to="/about" className="btn btn-outline-light">Learn More</Link>
+      {/* Hero Section with Slider */}
+      <section className="hero">
+        <div className="hero-slider">
+          {heroImages.map((image, index) => (
+            <div 
+              key={index} 
+              className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+            >
+              <img src={image} alt={`Slide ${index + 1}`} />
+              <div className="hero-overlay"></div>
             </div>
-          </div>
-          <div className="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div className="scroll-arrow"></div>
-          </div>
+          ))}
         </div>
-        <ThreeDShowroom />
+
+        <div className="hero-content">
+          <h1 className="hero-title">Making Ideas Into Realities</h1>
+          <p className="hero-subtitle">
+            Chosen Metal Industries - Your Trusted Metal Stamping & Fabrication Partner
+          </p>
+          <Link to="/contact" className="btn btn-primary">Get In Touch</Link>
+        </div>
+
+        <button className="hero-arrow prev" onClick={goToPrev}>&#8249;</button>
+        <button className="hero-arrow next" onClick={goToNext}>&#8250;</button>
+
+        <div className="hero-dots">
+          {heroImages.map((_, index) => (
+            <div 
+              key={index} 
+              className={`hero-dot ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(index)}
+            ></div>
+          ))}
+        </div>
       </section>
 
       {/* About Preview Section */}
@@ -56,8 +89,8 @@ function Home() {
               <p>
                 Endowed with and empowered by a dynamic in-house team of competently led 
                 and managed group of diverse talents and skills: computer savvy designers, 
-                illustrators, artisans and process integrators, CMI is capable, competent to transform mere ideas 
-                and equipped from the mind into actual products, 
+                illustrators, artisans and process integrators, CMI is capable, competent 
+                and equipped to transform mere ideas from the mind into actual products, 
                 and all under one roof.
               </p>
               <Link to="/about" className="btn btn-primary">Learn More</Link>
